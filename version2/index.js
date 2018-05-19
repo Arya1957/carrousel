@@ -27,7 +27,7 @@ Slider.prototype = {
     },
     renderBullet: function () {
         this.bulletCt = this.el.lastElementChild;
-        var str = '';
+        let str = '';
         for (let i = 0; i < this.length; i++) {
             str += '<li class="bullet-item"  ></li>';
         }
