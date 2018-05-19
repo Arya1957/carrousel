@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 原生JS 实现轮播 未封装</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="音乐,QQ音乐,在线听歌,音乐下载,音乐播放器,音乐网站,MV,巅峰榜,音乐排行榜,翻译歌曲,热门歌曲,经典老歌,无损音乐,无损曲库">
+</head>
+<body>
+<!--首页头部-->
+<header class = "mod_header">
+    <span class="music-logo"> </span>
+</header>
+
+<!--轮播部分-->
+
+<div class="slider">
+    <ul class="slider-group clearfix">
+        <li data-id="0" class="slider-item"><a href="#"><img src="../images/lizhi.jpg" alt=""></a></li>
+        <li data-id="1" class="slider-item"><a href="#"><img src="../images/xuezhiqian.jpg" alt=""></a></li>
+        <li data-id="2" class="slider-item"><a href="#"><img src="../images/GMA.jpg" alt=""></a></li>
+        <li data-id="3" class="slider-item"><a href="#"><img src="../images/Jay.jpg" alt=""></a></li>
+        <li data-id="4"class="slider-item"><a href="#"><img src="../images/lizongsheng.jpg" alt=""></a></li>
+    </ul>
+
+    <ul class="bullets">
+        <li class="bullet-item active" data-id="0" ></li>
+        <li class="bullet-item" data-id="1" ></li>
+        <li class="bullet-item" data-id="2" ></li>
+        <li class="bullet-item" data-id="3" ></li>
+        <li class="bullet-item" data-id="4" ></li>
+    </ul>
+</div>
+
+<script src = "index.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+/* flex  写法 */
+.mod_header {
+  background: #31c27c;
+  height: 44px;
+  display: flex;
+  align-items: center; }
+  .mod_header .music-logo {
+    width: 94px;
+    height: 26px;
+    margin-left: 9px;
+    background: url(../images/logo.png) no-repeat 0 0;
+    background-size: cover; }
+
+/* 不用 flex 的写法
+.mod_header {
+  background: #31c27c;
+  height: 44px;
+  border: 1px solid  #31c27c;  // 阻止外边距合并导致的上方背景色空白
+
+  .music-logo {
+    display: block;
+    background:  url(../images/logo.png) no-repeat ;
+    background-size: cover;
+    width: 94px;
+    height: 26px;
+    margin: 9px ;
+  }
+ }
+*/
+.slider {
+  position: relative;
+  width: 10rem;
+  overflow: hidden; }
+  .slider .slider-group {
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative; }
+
+.slider > .slider-group > .slider-item {
+  float: left;
+  width: 10rem; }
+  .slider > .slider-group > .slider-item img {
+    width: 100%; }
+
+.slider > .bullets {
+  position: absolute;
+  text-align: center;
+  bottom: 8px;
+  width: 100%; }
+  .slider > .bullets .bullet-item {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #adaaaa; }
+  .slider > .bullets .bullet-item.active {
+    background: #fff; }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/*# sourceMappingURL=index.css.map */
